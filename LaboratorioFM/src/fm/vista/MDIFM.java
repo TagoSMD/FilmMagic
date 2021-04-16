@@ -5,6 +5,8 @@
  */
 package fm.vista;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author OtakuGT
@@ -16,6 +18,10 @@ public class MDIFM extends javax.swing.JFrame {
      */
     public MDIFM() {
         initComponents();
+        setLocationRelativeTo(null);
+        this.setExtendedState(MDIFM.MAXIMIZED_BOTH);
+        this.setTitle("LaboratorioFM");
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
     }
 
     /**
@@ -27,21 +33,196 @@ public class MDIFM extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jDesktopMDI = new javax.swing.JDesktopPane();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        MenuArchivo = new javax.swing.JMenu();
+        jMenuItem15 = new javax.swing.JMenuItem();
+        MenuCatalogos = new javax.swing.JMenu();
+        jMenu7 = new javax.swing.JMenu();
+        jMenuItem1 = new javax.swing.JMenuItem();
+        jMenuItem2 = new javax.swing.JMenuItem();
+        jMenuItem3 = new javax.swing.JMenuItem();
+        jMenuItem4 = new javax.swing.JMenuItem();
+        jMenuItem5 = new javax.swing.JMenuItem();
+        jMenu8 = new javax.swing.JMenu();
+        jMenuItem6 = new javax.swing.JMenuItem();
+        jMenuItem7 = new javax.swing.JMenuItem();
+        jMenuItem8 = new javax.swing.JMenuItem();
+        jMenuItem9 = new javax.swing.JMenuItem();
+        jMenuItem10 = new javax.swing.JMenuItem();
+        jMenu9 = new javax.swing.JMenu();
+        jMenuItem11 = new javax.swing.JMenuItem();
+        jMenuItem12 = new javax.swing.JMenuItem();
+        jMenu10 = new javax.swing.JMenu();
+        jMenuItem13 = new javax.swing.JMenuItem();
+        jMenu11 = new javax.swing.JMenu();
+        jMenuItem14 = new javax.swing.JMenuItem();
+        MenuProcesos = new javax.swing.JMenu();
+        MenuInformes = new javax.swing.JMenu();
+        MenuHerramientas = new javax.swing.JMenu();
+        MenuAyuda = new javax.swing.JMenu();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jDesktopMDI.setBackground(new java.awt.Color(0, 153, 204));
+
+        javax.swing.GroupLayout jDesktopMDILayout = new javax.swing.GroupLayout(jDesktopMDI);
+        jDesktopMDI.setLayout(jDesktopMDILayout);
+        jDesktopMDILayout.setHorizontalGroup(
+            jDesktopMDILayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 990, Short.MAX_VALUE)
+        );
+        jDesktopMDILayout.setVerticalGroup(
+            jDesktopMDILayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 661, Short.MAX_VALUE)
+        );
+
+        MenuArchivo.setText("Archivo");
+        MenuArchivo.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+
+        jMenuItem15.setText("Cerrar Programa");
+        jMenuItem15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem15ActionPerformed(evt);
+            }
+        });
+        MenuArchivo.add(jMenuItem15);
+
+        jMenuBar1.add(MenuArchivo);
+
+        MenuCatalogos.setText("Catalogos");
+        MenuCatalogos.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+
+        jMenu7.setText("Peliculas");
+
+        jMenuItem1.setText("Mantenimiento Rentar Pelicula");
+        jMenu7.add(jMenuItem1);
+
+        jMenuItem2.setText("Mantenimiento Peliculas");
+        jMenu7.add(jMenuItem2);
+
+        jMenuItem3.setText("Mantenimiento Tipo Pelicula");
+        jMenu7.add(jMenuItem3);
+
+        jMenuItem4.setText("Mantenimiento Clasificacion Pelicula");
+        jMenu7.add(jMenuItem4);
+
+        jMenuItem5.setText("Mantenimiento Devolucion Pelicula");
+        jMenu7.add(jMenuItem5);
+
+        MenuCatalogos.add(jMenu7);
+
+        jMenu8.setText("VideoJuegos");
+
+        jMenuItem6.setText("Mantenimiento Rentar Videojuego");
+        jMenu8.add(jMenuItem6);
+
+        jMenuItem7.setText("Mantenimiento Videojuego");
+        jMenuItem7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem7ActionPerformed(evt);
+            }
+        });
+        jMenu8.add(jMenuItem7);
+
+        jMenuItem8.setText("Mantenimiento Tipo Videojuego");
+        jMenuItem8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem8ActionPerformed(evt);
+            }
+        });
+        jMenu8.add(jMenuItem8);
+
+        jMenuItem9.setText("Mantenimiento Clasificacion Videojuego");
+        jMenuItem9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem9ActionPerformed(evt);
+            }
+        });
+        jMenu8.add(jMenuItem9);
+
+        jMenuItem10.setText("Mantenimiento Devolucion Videojuego");
+        jMenu8.add(jMenuItem10);
+
+        MenuCatalogos.add(jMenu8);
+
+        jMenu9.setText("Clientes");
+
+        jMenuItem11.setText("Registro de Rentas");
+        jMenu9.add(jMenuItem11);
+
+        jMenuItem12.setText("Mantenimiento Membresia Clientes");
+        jMenu9.add(jMenuItem12);
+
+        MenuCatalogos.add(jMenu9);
+
+        jMenu10.setText("Empleados");
+
+        jMenuItem13.setText("Mantenimiento de Empleados");
+        jMenu10.add(jMenuItem13);
+
+        MenuCatalogos.add(jMenu10);
+
+        jMenu11.setText("Tiendas");
+
+        jMenuItem14.setText("Mantenimiento de Tiendas");
+        jMenu11.add(jMenuItem14);
+
+        MenuCatalogos.add(jMenu11);
+
+        jMenuBar1.add(MenuCatalogos);
+
+        MenuProcesos.setText("Procesos");
+        MenuProcesos.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jMenuBar1.add(MenuProcesos);
+
+        MenuInformes.setText("Informes");
+        MenuInformes.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jMenuBar1.add(MenuInformes);
+
+        MenuHerramientas.setText("Herramientas");
+        MenuHerramientas.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jMenuBar1.add(MenuHerramientas);
+
+        MenuAyuda.setText("Ayuda");
+        MenuAyuda.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jMenuBar1.add(MenuAyuda);
+
+        setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addComponent(jDesktopMDI)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addComponent(jDesktopMDI)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jMenuItem7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem7ActionPerformed
+
+    private void jMenuItem8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem8ActionPerformed
+
+    private void jMenuItem9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem9ActionPerformed
+
+    private void jMenuItem15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem15ActionPerformed
+        int respuesta_fm = JOptionPane.showConfirmDialog(this, "¿Desea cerrar el programa?", "Cerrar Programa", JOptionPane.YES_NO_OPTION);
+
+        if (respuesta_fm == 0) {
+            this.dispose();
+        }
+    }//GEN-LAST:event_jMenuItem15ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -79,5 +260,33 @@ public class MDIFM extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenu MenuArchivo;
+    private javax.swing.JMenu MenuAyuda;
+    private javax.swing.JMenu MenuCatalogos;
+    private javax.swing.JMenu MenuHerramientas;
+    private javax.swing.JMenu MenuInformes;
+    private javax.swing.JMenu MenuProcesos;
+    private javax.swing.JDesktopPane jDesktopMDI;
+    private javax.swing.JMenu jMenu10;
+    private javax.swing.JMenu jMenu11;
+    private javax.swing.JMenu jMenu7;
+    private javax.swing.JMenu jMenu8;
+    private javax.swing.JMenu jMenu9;
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem10;
+    private javax.swing.JMenuItem jMenuItem11;
+    private javax.swing.JMenuItem jMenuItem12;
+    private javax.swing.JMenuItem jMenuItem13;
+    private javax.swing.JMenuItem jMenuItem14;
+    private javax.swing.JMenuItem jMenuItem15;
+    private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenuItem jMenuItem3;
+    private javax.swing.JMenuItem jMenuItem4;
+    private javax.swing.JMenuItem jMenuItem5;
+    private javax.swing.JMenuItem jMenuItem6;
+    private javax.swing.JMenuItem jMenuItem7;
+    private javax.swing.JMenuItem jMenuItem8;
+    private javax.swing.JMenuItem jMenuItem9;
     // End of variables declaration//GEN-END:variables
 }
